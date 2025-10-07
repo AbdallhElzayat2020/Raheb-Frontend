@@ -4,11 +4,22 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>خدماتنا - شركة إبراهيم</title>
-    <meta name="description" content="تعرف على جميع الخدمات التي تقدمها شركة إبراهيم في مجال التقنية والتطوير" />
+    <title>شركة رحب - للخدمات التقنية</title>
+    <link rel="icon" type="image/svg+xml" href="./assets/images/logo.svg" />
+    <meta name="author" content="شركة رحب" />
+    <meta name="theme-color" content="#1f2b7b" />
+    <meta property="og:title" content="شركة رحب - للخدمات التقنية" />
+    <meta property="og:description" content="شركة رحب تقدم خدمات متميزة وحلول احترافية لعملائها" />
+    <meta property="og:image" content="../صورة-واجهة-الموقع-04.png" />
+    <meta property="og:type" content="website" />
+    <meta name="description" content="شركة رحب تقدم خدمات متميزة وحلول احترافية لعملائها" />
+    <meta name="keywords" content="شركة رحب, خدمات, حلول احترافية" />
 
-    <!-- CSS Files -->
-    <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Google Fonts for Arabic -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
 
     <!-- Google Fonts for Arabic -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -17,55 +28,57 @@
 
     <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 </head>
 
 <body>
     <!-- Header -->
+    <!-- Header -->
     <header class="header">
-        <nav class="navbar">
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top">
             <div class="container">
-                <div class="nav-brand">
-                    <a href="index.html" class="logo">
-                        <h2>شركة إبراهيم</h2>
-                    </a>
-                </div>
+                <a class="navbar-brand" href="#home">
+                    <img src="./assets/images/logo.svg" alt="شركة رحب" height="40" />
+                </a>
 
-                <ul class="nav-menu">
-                    <li class="nav-item">
-                        <a href="index.html" class="nav-link">الرئيسية</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="services.html" class="nav-link active">خدماتنا</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="about.html" class="nav-link">من نحن</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="contact.html" class="nav-link">تواصل معنا</a>
-                    </li>
-                </ul>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-                <div class="hamburger">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#home">الرئيسية</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">من نحن</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#services">خدماتنا</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">تواصل معنا</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </nav>
     </header>
 
+
     <!-- Page Header -->
     <section class="page-header">
         <div class="container">
             <div class="page-header-content">
-                <h1 class="page-title">خدماتنا المتميزة</h1>
-                <p class="page-subtitle">
-                    نقدم مجموعة شاملة من الخدمات التقنية المتطورة
-                </p>
+                <h1 class="page-title">اسم الخدمة هيبقي هنا</h1>
+
                 <nav class="breadcrumb">
                     <a href="index.html">الرئيسية</a>
                     <span class="breadcrumb-separator">/</span>
-                    <span class="breadcrumb-current">خدماتنا</span>
+                    <span class="breadcrumb-current">اسم الخدمة هيبقي هنا</span>
                 </nav>
             </div>
         </div>
@@ -81,33 +94,15 @@
                         <div class="service-icon-large">
                             <i class="fas fa-laptop-code"></i>
                         </div>
-                        <h2 class="service-detail-title">تطوير المواقع الإلكترونية</h2>
+                        <h2 class="service-detail-title">اسم الخدمة هيبقي هنا</h2>
                         <p class="service-detail-description">
                             نقدم خدمات تطوير المواقع الإلكترونية باستخدام أحدث التقنيات
                             والمعايير العالمية. مواقعنا متجاوبة مع جميع الأجهزة ومحسنة
                             لمحركات البحث.
+                            نقدم خدمات تطوير المواقع الإلكترونية باستخدام أحدث التقنيات
+                            والمعايير العالمية. مواقعنا متجاوبة مع جميع الأجهزة ومحسنة
+                            لمحركات البحث.
                         </p>
-                        <ul class="service-features">
-                            <li>
-                                <i class="fas fa-check"></i> تصميم متجاوب (Responsive Design)
-                            </li>
-                            <li><i class="fas fa-check"></i> محسن لمحركات البحث (SEO)</li>
-                            <li><i class="fas fa-check"></i> سرعة تحميل عالية</li>
-                            <li><i class="fas fa-check"></i> لوحة تحكم سهلة الاستخدام</li>
-                            <li><i class="fas fa-check"></i> أمان وحماية متقدمة</li>
-                        </ul>
-                        <div class="service-technologies">
-                            <h4>التقنيات المستخدمة:</h4>
-                            <div class="tech-tags">
-                                <span class="tech-tag">HTML5</span>
-                                <span class="tech-tag">CSS3</span>
-                                <span class="tech-tag">JavaScript</span>
-                                <span class="tech-tag">React</span>
-                                <span class="tech-tag">Node.js</span>
-                                <span class="tech-tag">PHP</span>
-                                <span class="tech-tag">WordPress</span>
-                            </div>
-                        </div>
                     </div>
                     <div class="service-detail-image">
                         <div class="image-placeholder">
@@ -116,282 +111,87 @@
                     </div>
                 </div>
             </div>
-
-            <!-- Mobile App Development Service -->
-            <div class="service-detail reverse">
-                <div class="service-detail-content">
-                    <div class="service-detail-text">
-                        <div class="service-icon-large">
-                            <i class="fas fa-mobile-alt"></i>
-                        </div>
-                        <h2 class="service-detail-title">تطوير تطبيقات الجوال</h2>
-                        <p class="service-detail-description">
-                            نطور تطبيقات الهواتف الذكية المتطورة لنظامي iOS و Android
-                            باستخدام أحدث الأدوات والتقنيات لضمان أفضل تجربة للمستخدم.
-                        </p>
-                        <ul class="service-features">
-                            <li><i class="fas fa-check"></i> تطبيقات iOS و Android</li>
-                            <li><i class="fas fa-check"></i> تطبيقات متقاطعة المنصات</li>
-                            <li><i class="fas fa-check"></i> تصميم UI/UX احترافي</li>
-                            <li><i class="fas fa-check"></i> تكامل مع APIs</li>
-                            <li><i class="fas fa-check"></i> نشر في متاجر التطبيقات</li>
-                        </ul>
-                        <div class="service-technologies">
-                            <h4>التقنيات المستخدمة:</h4>
-                            <div class="tech-tags">
-                                <span class="tech-tag">React Native</span>
-                                <span class="tech-tag">Flutter</span>
-                                <span class="tech-tag">Swift</span>
-                                <span class="tech-tag">Kotlin</span>
-                                <span class="tech-tag">Firebase</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="service-detail-image">
-                        <div class="image-placeholder">
-                            <i class="fas fa-mobile-alt"></i>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Digital Marketing Service -->
-            <div class="service-detail">
-                <div class="service-detail-content">
-                    <div class="service-detail-text">
-                        <div class="service-icon-large">
-                            <i class="fas fa-chart-line"></i>
-                        </div>
-                        <h2 class="service-detail-title">التسويق الرقمي</h2>
-                        <p class="service-detail-description">
-                            نقدم حلول تسويقية رقمية شاملة تساعد في نمو أعمالك وزيادة الوصول
-                            إلى العملاء المستهدفين من خلال استراتيجيات مدروسة وفعالة.
-                        </p>
-                        <ul class="service-features">
-                            <li>
-                                <i class="fas fa-check"></i> إدارة وسائل التواصل الاجتماعي
-                            </li>
-                            <li>
-                                <i class="fas fa-check"></i> الإعلانات المدفوعة (Google Ads,
-                                Facebook Ads)
-                            </li>
-                            <li><i class="fas fa-check"></i> تحسين محركات البحث (SEO)</li>
-                            <li><i class="fas fa-check"></i> التسويق بالمحتوى</li>
-                            <li>
-                                <i class="fas fa-check"></i> التسويق عبر البريد الإلكتروني
-                            </li>
-                        </ul>
-                        <div class="service-technologies">
-                            <h4>المنصات والأدوات:</h4>
-                            <div class="tech-tags">
-                                <span class="tech-tag">Google Analytics</span>
-                                <span class="tech-tag">Facebook Business</span>
-                                <span class="tech-tag">Instagram</span>
-                                <span class="tech-tag">LinkedIn</span>
-                                <span class="tech-tag">Mailchimp</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="service-detail-image">
-                        <div class="image-placeholder">
-                            <i class="fas fa-chart-bar"></i>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Graphic Design Service -->
-            <div class="service-detail reverse">
-                <div class="service-detail-content">
-                    <div class="service-detail-text">
-                        <div class="service-icon-large">
-                            <i class="fas fa-paint-brush"></i>
-                        </div>
-                        <h2 class="service-detail-title">التصميم الجرافيكي</h2>
-                        <p class="service-detail-description">
-                            نقدم خدمات التصميم الجرافيكي الاحترافية لتصميم الهوية البصرية
-                            والمواد الإعلانية والتسويقية التي تعكس هوية علامتك التجارية بشكل
-                            مميز.
-                        </p>
-                        <ul class="service-features">
-                            <li>
-                                <i class="fas fa-check"></i> تصميم الهوية البصرية والشعارات
-                            </li>
-                            <li><i class="fas fa-check"></i> تصميم المطبوعات والكتيبات</li>
-                            <li>
-                                <i class="fas fa-check"></i> تصميم مواد التواصل الاجتماعي
-                            </li>
-                            <li><i class="fas fa-check"></i> تصميم اللافتات والإعلانات</li>
-                            <li><i class="fas fa-check"></i> تصميم الرسوم التوضيحية</li>
-                        </ul>
-                        <div class="service-technologies">
-                            <h4>البرامج المستخدمة:</h4>
-                            <div class="tech-tags">
-                                <span class="tech-tag">Adobe Photoshop</span>
-                                <span class="tech-tag">Adobe Illustrator</span>
-                                <span class="tech-tag">Adobe InDesign</span>
-                                <span class="tech-tag">Figma</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="service-detail-image">
-                        <div class="image-placeholder">
-                            <i class="fas fa-palette"></i>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Technical Consulting Service -->
-            <div class="service-detail">
-                <div class="service-detail-content">
-                    <div class="service-detail-text">
-                        <div class="service-icon-large">
-                            <i class="fas fa-cogs"></i>
-                        </div>
-                        <h2 class="service-detail-title">الاستشارات التقنية</h2>
-                        <p class="service-detail-description">
-                            نقدم استشارات تقنية متخصصة لمساعدة الشركات في اتخاذ القرارات
-                            التقنية الصحيحة وتطوير استراتيجيات تقنية فعالة تدعم نمو الأعمال.
-                        </p>
-                        <ul class="service-features">
-                            <li><i class="fas fa-check"></i> تحليل الاحتياجات التقنية</li>
-                            <li><i class="fas fa-check"></i> وضع الاستراتيجيات التقنية</li>
-                            <li><i class="fas fa-check"></i> تقييم الأنظمة الحالية</li>
-                            <li><i class="fas fa-check"></i> تطوير خطط التطوير</li>
-                            <li><i class="fas fa-check"></i> إدارة المشاريع التقنية</li>
-                        </ul>
-                        <div class="service-technologies">
-                            <h4>مجالات الاستشارة:</h4>
-                            <div class="tech-tags">
-                                <span class="tech-tag">Cloud Computing</span>
-                                <span class="tech-tag">Cybersecurity</span>
-                                <span class="tech-tag">Database Design</span>
-                                <span class="tech-tag">System Architecture</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="service-detail-image">
-                        <div class="image-placeholder">
-                            <i class="fas fa-users-cog"></i>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Technical Support Service -->
-            <div class="service-detail reverse">
-                <div class="service-detail-content">
-                    <div class="service-detail-text">
-                        <div class="service-icon-large">
-                            <i class="fas fa-headset"></i>
-                        </div>
-                        <h2 class="service-detail-title">الدعم التقني</h2>
-                        <p class="service-detail-description">
-                            نوفر خدمات الدعم التقني المتواصل لضمان استمرارية عمل أنظمتكم وحل
-                            أي مشاكل تقنية قد تواجهونها بسرعة وكفاءة عالية.
-                        </p>
-                        <ul class="service-features">
-                            <li><i class="fas fa-check"></i> دعم فني 24/7</li>
-                            <li><i class="fas fa-check"></i> صيانة دورية للأنظمة</li>
-                            <li><i class="fas fa-check"></i> تحديثات أمنية منتظمة</li>
-                            <li><i class="fas fa-check"></i> نسخ احتياطية للبيانات</li>
-                            <li><i class="fas fa-check"></i> مراقبة الأداء والأمان</li>
-                        </ul>
-                        <div class="service-technologies">
-                            <h4>قنوات الدعم:</h4>
-                            <div class="tech-tags">
-                                <span class="tech-tag">دعم هاتفي</span>
-                                <span class="tech-tag">دعم عبر البريد</span>
-                                <span class="tech-tag">دعم فوري (Live Chat)</span>
-                                <span class="tech-tag">دعم عن بُعد</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="service-detail-image">
-                        <div class="image-placeholder">
-                            <i class="fas fa-life-ring"></i>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
     </section>
 
-    <!-- CTA Section -->
-    <section class="cta-section">
-        <div class="container">
-            <div class="cta-content">
-                <h2 class="cta-title">هل تحتاج إلى أي من هذه الخدمات؟</h2>
-                <p class="cta-subtitle">
-                    تواصل معنا الآن للحصول على استشارة مجانية وعرض سعر مخصص لمشروعك
-                </p>
-                <div class="cta-buttons">
-                    <a href="contact.html" class="btn btn-primary">تواصل معنا</a>
-                    <a href="tel:+966501234567" class="btn btn-secondary">اتصل بنا الآن</a>
-                </div>
-            </div>
-        </div>
-    </section>
+
 
     <!-- Footer -->
-    <footer class="footer">
+    <footer class="footer" style="
+        background-image: url('./bg_section.png');
+        background-repeat: no-repeat;
+      ">
         <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3 class="footer-title">شركة إبراهيم</h3>
-                    <p class="footer-text">
-                        نقدم أفضل الخدمات التقنية والاستشارات المتخصصة لعملائنا بجودة
-                        عالية وأسعار منافسة.
-                    </p>
-                    <div class="social-links">
-                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-section">
+                        <h3 class="footer-title">شركة رحب</h3>
+                        <p class="footer-text">
+                            نقدم أفضل الخدمات التقنية والاستشارات المتخصصة لعملائنا بجودة
+                            عالية وأسعار منافسة.
+                        </p>
+                        <div class="social-links my-3">
+                            <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        </div>
                     </div>
                 </div>
 
-                <div class="footer-section">
-                    <h4 class="footer-subtitle">روابط سريعة</h4>
-                    <ul class="footer-links">
-                        <li><a href="index.html">الرئيسية</a></li>
-                        <li><a href="services.html">خدماتنا</a></li>
-                        <li><a href="about.html">من نحن</a></li>
-                        <li><a href="contact.html">تواصل معنا</a></li>
-                    </ul>
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-section">
+                        <h4 class="footer-subtitle">روابط سريعة</h4>
+                        <ul class="footer-links">
+                            <li><a href="#home">الرئيسية</a></li>
+                            <li><a href="#services">خدماتنا</a></li>
+                            <li><a href="#about">من نحن</a></li>
+                            <li><a href="#contact">تواصل معنا</a></li>
+                        </ul>
+                    </div>
                 </div>
 
-                <div class="footer-section">
-                    <h4 class="footer-subtitle">خدماتنا</h4>
-                    <ul class="footer-links">
-                        <li><a href="services.html">تطوير المواقع</a></li>
-                        <li><a href="services.html">تطبيقات الجوال</a></li>
-                        <li><a href="services.html">التسويق الرقمي</a></li>
-                        <li><a href="services.html">التصميم الجرافيكي</a></li>
-                    </ul>
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-section">
+                        <h4 class="footer-subtitle">خدماتنا</h4>
+                        <ul class="footer-links">
+                            <li><a href="#services">تطوير المواقع</a></li>
+                            <li><a href="#services">تطبيقات الجوال</a></li>
+                            <li><a href="#services">التسويق الرقمي</a></li>
+                            <li><a href="#services">التصميم الجرافيكي</a></li>
+                        </ul>
+                    </div>
                 </div>
 
-                <div class="footer-section">
-                    <h4 class="footer-subtitle">معلومات التواصل</h4>
-                    <div class="contact-info-footer">
-                        <p>
-                            <i class="fas fa-map-marker-alt"></i> الرياض، المملكة العربية
-                            السعودية
-                        </p>
-                        <p><i class="fas fa-phone"></i> +966 50 123 4567</p>
-                        <p><i class="fas fa-envelope"></i> info@ibrahim-company.com</p>
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-section">
+                        <h4 class="footer-subtitle">معلومات التواصل</h4>
+                        <div class="contact-info-footer">
+                            <p>
+                                <i class="fas fa-map-marker-alt"></i>
+                                الخرج – المملكة العربية السعودية
+                            </p>
+                            <p><i class="fas fa-phone"></i>0546959455</p>
+                            <a href="mailto:info@ruhb-sa.com"><i class="fas fa-envelope"></i> info@ruhb-sa.com</a>
+                        </div>
                     </div>
                 </div>
             </div>
 
             <div class="footer-bottom">
-                <p>&copy; 2025 شركة إبراهيم. جميع الحقوق محفوظة.</p>
+                <p style="color: white">
+                    &copy; التصميم والبرمجة بواسطة <a style="color: var(--accent);"
+                        href="https://mostaql.com/u/Abdallh_Elzayat/portfolio" target="_blank">عبدالله الزيات</a>
+                </p>
             </div>
         </div>
     </footer>
 
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
     <!-- JavaScript Files -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="assets/js/main.js"></script>
 </body>
 
