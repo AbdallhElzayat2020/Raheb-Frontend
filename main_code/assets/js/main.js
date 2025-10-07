@@ -1,6 +1,5 @@
 // ===== DOM Elements =====
 const navLinks = document.querySelectorAll('.nav-link');
-const contactForm = document.querySelector('.contact-form');
 const faqItems = document.querySelectorAll('.faq-item');
 const statNumbers = document.querySelectorAll('.stat-number');
 const loader = document.getElementById('loader');
@@ -32,8 +31,8 @@ function initSmoothScrolling() {
       const targetElement = document.querySelector(targetId);
 
       if (targetElement) {
-        const headerHeight = document.querySelector('.header').offsetHeight;
-        const targetPosition = targetElement.offsetTop - headerHeight - 20; // Add extra 20px offset
+        const navbarHeight = document.querySelector('.navbar').offsetHeight;
+        const targetPosition = targetElement.offsetTop - navbarHeight - 20; // Add extra 20px offset
 
         window.scrollTo({
           top: targetPosition,
@@ -70,16 +69,19 @@ function initActiveNavigation() {
   function updateActiveLink() {
     let current = '';
 
-    sections.forEach(section => {
+    sections.forEach((section) => {
       const sectionTop = section.offsetTop - 100;
       const sectionHeight = section.offsetHeight;
 
-      if (window.scrollY >= sectionTop && window.scrollY < sectionTop + sectionHeight) {
+      if (
+        window.scrollY >= sectionTop &&
+        window.scrollY < sectionTop + sectionHeight
+      ) {
         current = section.getAttribute('id');
       }
     });
 
-    navLinks.forEach(link => {
+    navLinks.forEach((link) => {
       link.classList.remove('active');
       if (link.getAttribute('href') === `#${current}`) {
         link.classList.add('active');
@@ -170,78 +172,6 @@ function initFAQAccordion() {
       });
     }
   });
-}
-
-// ===== Form Validation & Submission =====
-function initContactForm() {
-  if (!contactForm) return;
-
-  contactForm.addEventListener('submit', async (e) => {
-    e.preventDefault();
-
-    // Get form data
-    const formData = new FormData(contactForm);
-    const data = Object.fromEntries(formData);
-
-    // Basic validation
-    if (!validateForm(data)) {
-      showNotification('يرجى ملء جميع الحقول المطلوبة بشكل صحيح.', 'error');
-      return;
-    }
-
-    // Show loading state
-    const submitBtn = contactForm.querySelector('button[type="submit"]');
-    const originalText = submitBtn.innerHTML;
-    submitBtn.innerHTML =
-      '<i class="fas fa-spinner fa-spin"></i> جارٍ الإرسال...';
-    submitBtn.disabled = true;
-
-    try {
-      // Simulate form submission (replace with actual API call)
-      await simulateFormSubmission(data);
-
-      showNotification('تم إرسال رسالتك بنجاح! سنتواصل معك قريباً.', 'success');
-      contactForm.reset();
-    } catch (error) {
-      showNotification(
-        'حدث خطأ أثناء إرسال الرسالة. يرجى المحاولة مرة أخرى.',
-        'error'
-      );
-    } finally {
-      // Restore button state
-      submitBtn.innerHTML = originalText;
-      submitBtn.disabled = false;
-    }
-  });
-
-  function validateForm(data) {
-    // Check required fields
-    const requiredFields = ['name', 'email', 'message'];
-
-    for (const field of requiredFields) {
-      if (!data[field] || data[field].trim() === '') {
-        return false;
-      }
-    }
-
-    // Validate email
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!emailRegex.test(data.email)) {
-      return false;
-    }
-
-    return true;
-  }
-
-  async function simulateFormSubmission(data) {
-    // Simulate API call delay
-    return new Promise((resolve) => {
-      setTimeout(() => {
-        console.log('Form submitted:', data);
-        resolve();
-      }, 2000);
-    });
-  }
 }
 
 // ===== Scroll to Top Button =====
@@ -433,13 +363,13 @@ function initAccessibility() {
   });
 
   // Add main landmark if not exists
-  const main = document.querySelector('main');
-  if (!main) {
-    const heroSection = document.querySelector('.hero, .page-header');
-    if (heroSection && heroSection.nextElementSibling) {
-      heroSection.nextElementSibling.setAttribute('id', 'main');
-    }
-  }
+  // const main = document.querySelector('main');
+  // if (!main) {
+  //   const heroSection = document.querySelector('.hero, .page-header');
+  //   if (heroSection && heroSection.nextElementSibling) {
+  //     heroSection.nextElementSibling.setAttribute('id', 'main');
+  //   }
+  // }
 }
 
 // ===== Performance Optimizations =====
@@ -504,7 +434,7 @@ function initErrorHandling() {
 function showNotification(message, type = 'info') {
   // Remove existing notifications
   const existingNotifications = document.querySelectorAll('.notification');
-  existingNotifications.forEach(notification => notification.remove());
+  existingNotifications.forEach((notification) => notification.remove());
 
   // Create notification element
   const notification = document.createElement('div');
@@ -521,7 +451,8 @@ function showNotification(message, type = 'info') {
     position: fixed;
     top: 100px;
     right: 20px;
-    background: ${type === 'success' ? '#5fc3ac' : type === 'error' ? '#e74c3c' : '#1f2b7b'};
+    background: ${type === 'success' ? '#5fc3ac' : type === 'error' ? '#e74c3c' : '#1f2b7b'
+    };
     color: white;
     padding: 1rem 1.5rem;
     border-radius: 10px;
@@ -574,7 +505,6 @@ function init() {
   initActiveNavigation();
   initStatsCounter();
   initFAQAccordion();
-  initContactForm();
   initScrollToTop();
   initScrollAnimations();
   initPageLoading();
@@ -583,8 +513,6 @@ function init() {
   initAccessibility();
   initPerformanceOptimizations();
   initErrorHandling();
-
-  console.log('🚀 Ibrahim Company Website initialized successfully!');
 }
 
 // ===== DOM Ready =====
@@ -599,7 +527,6 @@ window.IbrahimWebsite = {
   init,
   initMobileNavigation,
   initActiveNavigation,
-  initContactForm,
   initFAQAccordion,
   initStatsCounter,
 };
