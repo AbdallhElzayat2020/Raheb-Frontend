@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>شركة إبراهيم - للخدمات التقنية</title>
+	<link rel="icon" type="image/svg+xml" href="../logo.svg" />
+	<meta name="author" content="شركة إبراهيم" />
+	<meta name="theme-color" content="#1f2b7b" />
+	<meta property="og:title" content="شركة إبراهيم - للخدمات التقنية" />
+	<meta property="og:description" content="شركة إبراهيم تقدم خدمات متميزة وحلول احترافية لعملائها" />
+	<meta property="og:image" content="../صورة-واجهة-الموقع-04.png" />
+	<meta property="og:type" content="website" />
+	<meta name="description" content="شركة إبراهيم تقدم خدمات متميزة وحلول احترافية لعملائها" />
+	<meta name="keywords" content="شركة إبراهيم, خدمات, حلول احترافية" />
+
+	<!-- Bootstrap CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- CSS Files -->
+	<link rel="stylesheet" href="assets/css/style.css" />
+
+	<!-- Google Fonts for Arabic -->
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet" />
+
+	<!-- Font Awesome Icons -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+	<!-- AOS Animation Library -->
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+	<!-- Loader -->
+	<div class="loader" id="loader">
+		<div class="loader-content">
+			<div class="loader-logo">
+				<img src="../logo.svg" alt="logo" />
+			</div>
+			<div class="loader-spinner"></div>
+		</div>
+	</div>
+
+	<!-- Header -->
+	<header class="header">
+		<nav class="navbar navbar-expand-lg navbar-light fixed-top">
+			<div class="container">
+				<a class="navbar-brand" href="#home">
+					<img src="../logo.svg" alt="شركة إبراهيم" height="40" />
+				</a>
+
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+					aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+
+				<div class="collapse navbar-collapse" id="navbarNav">
+					<ul class="navbar-nav me-auto">
+						<li class="nav-item">
+							<a class="nav-link active" href="#home">الرئيسية</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#about">من نحن</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#services">خدماتنا</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#contact">تواصل معنا</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+
+	<!-- Hero Section -->
+	<section class="hero" id="home"
+		style="background-image: url('../صورة-واجهة-الموقع-04.png'); height: calc(80vh); background-size: cover; background-position: center; background-repeat: no-repeat;">
+		<div class="hero-content">
+			<div class="container">
+				<div class="hero-text" data-aos="fade-up" data-aos-duration="1000">
+					<h1 class="hero-title">مرحباً بكم في شركة إبراهيم</h1>
+					<p class="hero-subtitle">
+						شركة رائدة في مجال الخدمات التقنية والاستشارات المتخصصة، نقدم حلول مبتكرة ومتطورة تلبي احتياجات
+						عملائنا
+					</p>
+					<div class="hero-buttons">
+						<a href="#services" class="btn btn-primary">تصفح خدماتنا</a>
+						<a href="#contact" class="btn btn-secondary">تواصل معنا</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="hero-bg"></div>
+	</section>
+
+	<!-- About Section -->
+	<!-- <section class="about" id="about">
+		<div class="container">
+			<div class="about-content">
+				<div class="about-text">
+					<h2 class="section-title">من نحن</h2>
+					<p class="about-description">
+						رحب وكالة سعودية للتسويق الرقمي متخصصة في تقديم حلول واستراتيجيات تسويقية مبتكرة، لتحقيق نمو
+						مستدام قائم على الإبداع والتقنيات الحديثة
+					</p>
+					<div class="about-features">
+						<div class="feature">
+							<i class="fas fa-check-circle"></i>
+							<span>خبرة واسعة في السوق</span>
+						</div>
+						<div class="feature">
+							<i class="fas fa-check-circle"></i>
+							<span>فريق عمل محترف ومتخصص</span>
+						</div>
+						<div class="feature">
+							<i class="fas fa-check-circle"></i>
+							<span>التزام بالجودة والمواعيد</span>
+						</div>
+						<div class="feature">
+							<i class="fas fa-check-circle"></i>
+							<span>دعم فني متواصل</span>
+						</div>
+					</div>
+					<a href="about.html" class="btn btn-primary">تعرف علينا أكثر</a>
+				</div>
+				<div class="about-image">
+					<div class="image-placeholder">
+						<i class="fas fa-building"></i>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section> -->
+
+
+	<section class="about-company" id="about">
+		<div class="container">
+			<div class="about-content">
+				<div class="about-text" data-aos="fade-right" data-aos-duration="1000">
+					<h2 class="section-title">من نحن</h2>
+					<p class="about-description">
+						تأسست شركة إبراهيم كشركة رائدة في مجال الخدمات التقنية والاستشارات
+						المتخصصة، حيث نسعى لتقديم حلول مبتكرة ومتطورة تلبي احتياجات
+						عملائنا المتنوعة في العصر الرقمي.
+					</p>
+
+					<div class="company-features">
+						<div class="feature-item" data-aos="fade-up" data-aos-delay="100">
+							<div class="feature-icon">
+								<i class="fas fa-award"></i>
+							</div>
+							<div class="feature-content">
+								<h4>جودة عالية</h4>
+								<p>نلتزم بأعلى معايير الجودة في جميع مشاريعنا</p>
+							</div>
+						</div>
+
+						<div class="feature-item" data-aos="fade-up" data-aos-delay="200">
+							<div class="feature-icon">
+								<i class="fas fa-users"></i>
+							</div>
+							<div class="feature-content">
+								<h4>فريق متخصص</h4>
+								<p>نضم فريق من أفضل المطورين والمصممين</p>
+							</div>
+						</div>
+
+						<div class="feature-item" data-aos="fade-up" data-aos-delay="300">
+							<div class="feature-icon">
+								<i class="fas fa-rocket"></i>
+							</div>
+							<div class="feature-content">
+								<h4>تقنيات حديثة</h4>
+								<p>نستخدم أحدث التقنيات والأدوات المتاحة</p>
+							</div>
+						</div>
+
+						<div class="feature-item" data-aos="fade-up" data-aos-delay="400">
+							<div class="feature-icon">
+								<i class="fas fa-clock"></i>
+							</div>
+							<div class="feature-content">
+								<h4>التزام بالمواعيد</h4>
+								<p>نلتزم بتسليم المشاريع في الوقت المحدد</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="about-image" data-aos="fade-left" data-aos-duration="1000">
+					<div class="image-placeholder">
+						<i class="fas fa-building"></i>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- About Company Section -->
+
+
+	<!-- Vision and Mission Section -->
+	<section class="vision-mission">
+		<div class="container">
+			<div class="row g-4">
+				<div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="1000">
+					<div class="vm-item">
+						<div class="vm-icon">
+							<i class="fas fa-eye"></i>
+						</div>
+						<h3 class="vm-title">رؤيتنا</h3>
+						<p class="vm-description">
+							أن نكون الشركة الرائدة في المنطقة في مجال الخدمات التقنية والحلول
+							الرقمية المبتكرة، ونساهم في التحول الرقمي للشركات والمؤسسات بطريقة
+							تعزز من نموها وتطورها.
+						</p>
+					</div>
+				</div>
+
+				<div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+					<div class="vm-item">
+						<div class="vm-icon">
+							<i class="fas fa-bullseye"></i>
+						</div>
+						<h3 class="vm-title">رسالتنا</h3>
+						<p class="vm-description">
+							نقدم خدمات تقنية متميزة وحلول مبتكرة تلبي احتياجات عملائنا وتفوق
+							توقعاتهم، من خلال فريق عمل محترف يستخدم أحدث التقنيات والممارسات
+							العالمية.
+						</p>
+					</div>
+				</div>
+
+				<div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+					<div class="vm-item">
+						<div class="vm-icon">
+							<i class="fas fa-heart"></i>
+						</div>
+						<h3 class="vm-title">قيمنا</h3>
+						<p class="vm-description">
+							الاحترافية، الابتكار، الشفافية، والالتزام بالجودة. نؤمن بأهمية
+							بناء علاقات طويلة الأمد مع عملائنا من خلال تقديم خدمات تتسم
+							بالموثوقية والتميز.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Services Section -->
+	<section class="services" id="services">
+		<div class="container">
+			<div class="section-header">
+				<h2 class="section-title">خدماتنا المتميزة</h2>
+				<p class="section-subtitle">
+					نقدم مجموعة شاملة من الخدمات الاحترافية
+				</p>
+			</div>
+
+			<div class="row g-4">
+				<div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="1000">
+					<div class="service-card">
+						<div class="service-icon">
+							<i class="fas fa-laptop-code"></i>
+						</div>
+						<h3 class="service-title">تطوير المواقع</h3>
+						<p class="service-description">
+							تصميم وتطوير مواقع الويب الحديثة والمتجاوبة مع جميع الأجهزة
+						</p>
+						<a href="#contact" class="service-link">تواصل معنا</a>
+					</div>
+				</div>
+
+				<div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+					<div class="service-card">
+						<div class="service-icon">
+							<i class="fas fa-mobile-alt"></i>
+						</div>
+						<h3 class="service-title">تطبيقات الجوال</h3>
+						<p class="service-description">
+							تطوير تطبيقات الهواتف الذكية لنظامي iOS و Android
+						</p>
+						<a href="#contact" class="service-link">تواصل معنا</a>
+					</div>
+				</div>
+
+				<div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+					<div class="service-card">
+						<div class="service-icon">
+							<i class="fas fa-chart-line"></i>
+						</div>
+						<h3 class="service-title">التسويق الرقمي</h3>
+						<p class="service-description">
+							استراتيجيات التسويق الرقمي وإدارة وسائل التواصل الاجتماعي
+						</p>
+						<a href="#contact" class="service-link">تواصل معنا</a>
+					</div>
+				</div>
+
+				<div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+					<div class="service-card">
+						<div class="service-icon">
+							<i class="fas fa-paint-brush"></i>
+						</div>
+						<h3 class="service-title">التصميم الجرافيكي</h3>
+						<p class="service-description">
+							تصميم الهوية البصرية والمواد الإعلانية والجرافيك
+						</p>
+						<a href="#contact" class="service-link">تواصل معنا</a>
+					</div>
+				</div>
+
+				<div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+					<div class="service-card">
+						<div class="service-icon">
+							<i class="fas fa-cogs"></i>
+						</div>
+						<h3 class="service-title">الاستشارات التقنية</h3>
+						<p class="service-description">
+							استشارات تقنية متخصصة وحلول مخصصة للشركات
+						</p>
+						<a href="#contact" class="service-link">تواصل معنا</a>
+					</div>
+				</div>
+
+				<div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+					<div class="service-card">
+						<div class="service-icon">
+							<i class="fas fa-headset"></i>
+						</div>
+						<h3 class="service-title">الدعم التقني</h3>
+						<p class="service-description">
+							دعم تقني متواصل وصيانة للأنظمة والتطبيقات
+						</p>
+						<a href="#contact" class="service-link">تواصل معنا</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Why Choose Us Section -->
+	<section class="why-choose-us">
+		<div class="container">
+			<div class="section-header">
+				<h2 class="section-title">لماذا تختارنا؟</h2>
+				<p class="section-subtitle">
+					نقدم لك العديد من المزايا التي تجعلنا الخيار الأمثل
+				</p>
+			</div>
+
+			<div class="row g-4">
+				<div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="1000">
+					<div class="reason-item">
+						<div class="reason-icon">
+							<i class="fas fa-medal"></i>
+						</div>
+						<h4 class="reason-title">خبرة واسعة</h4>
+						<p class="reason-description">
+							لدينا خبرة عميقة في السوق وفهم شامل لاحتياجات العملاء المختلفة
+						</p>
+					</div>
+				</div>
+
+				<div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+					<div class="reason-item">
+						<div class="reason-icon">
+							<i class="fas fa-handshake"></i>
+						</div>
+						<h4 class="reason-title">شراكة حقيقية</h4>
+						<p class="reason-description">
+							نعمل كشريك استراتيجي لنجاحك وليس مجرد مقدم خدمة
+						</p>
+					</div>
+				</div>
+
+				<div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+					<div class="reason-item">
+						<div class="reason-icon">
+							<i class="fas fa-tools"></i>
+						</div>
+						<h4 class="reason-title">حلول مخصصة</h4>
+						<p class="reason-description">
+							نصمم حلول مخصصة تماماً لتناسب احتياجاتك وأهدافك المحددة
+						</p>
+					</div>
+				</div>
+
+				<div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+					<div class="reason-item">
+						<div class="reason-icon">
+							<i class="fas fa-shield-alt"></i>
+						</div>
+						<h4 class="reason-title">أمان وموثوقية</h4>
+						<p class="reason-description">
+							نضمن أعلى مستويات الأمان والحماية لبياناتك ومشاريعك
+						</p>
+					</div>
+				</div>
+
+				<div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+					<div class="reason-item">
+						<div class="reason-icon">
+							<i class="fas fa-chart-line"></i>
+						</div>
+						<h4 class="reason-title">نتائج مثبتة</h4>
+						<p class="reason-description">
+							سجل حافل من النجاحات والإنجازات مع عملائنا السابقين
+						</p>
+					</div>
+				</div>
+
+				<div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+					<div class="reason-item">
+						<div class="reason-icon">
+							<i class="fas fa-headset"></i>
+						</div>
+						<h4 class="reason-title">دعم متواصل</h4>
+						<p class="reason-description">
+							دعم فني وخدمة عملاء متاحة على مدار الساعة
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Contact Section -->
+	<section id="contact" class="contact">
+		<div class="container">
+			<div class="section-header" data-aos="fade-up" data-aos-duration="1000">
+				<h2 class="section-title">اتصل بنا</h2>
+				<p class="section-subtitle">نحن هنا لمساعدتك، تواصل معنا اليوم</p>
+			</div>
+			<div class="row g-4">
+				<div class="col-lg-6" data-aos="fade-right" data-aos-duration="1000">
+					<div class="contact-info">
+						<div class="contact-item">
+							<div class="contact-icon">
+								<i class="fas fa-map-marker-alt"></i>
+							</div>
+							<div class="contact-details">
+								<h4>العنوان</h4>
+								<p>شارع التكنولوجيا، مدينة الرياض، المملكة العربية السعودية</p>
+							</div>
+						</div>
+						<div class="contact-item">
+							<div class="contact-icon">
+								<i class="fas fa-phone"></i>
+							</div>
+							<div class="contact-details">
+								<h4>الهاتف</h4>
+								<p>+966 50 123 4567</p>
+							</div>
+						</div>
+						<div class="contact-item">
+							<div class="contact-icon">
+								<i class="fas fa-envelope"></i>
+							</div>
+							<div class="contact-details">
+								<h4>البريد الإلكتروني</h4>
+								<p>info@ibrahim.com</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-6" data-aos="fade-left" data-aos-duration="1000">
+					<form class="contact-form">
+						<div class="form-group">
+							<input type="text" id="name" name="name" placeholder="الاسم الكامل" required />
+						</div>
+						<div class="form-group">
+							<input type="email" id="email" name="email" placeholder="البريد الإلكتروني" required />
+						</div>
+						<div class="form-group">
+							<input type="tel" id="phone" name="phone" dir="rtl" placeholder="رقم الهاتف" />
+						</div>
+						<div class="form-group">
+							<textarea id="message" name="message" placeholder="رسالتك" rows="5" required></textarea>
+						</div>
+						<button type="submit" class="btn btn-primary btn-large">
+							<i class="fas fa-paper-plane"></i>
+							إرسال الرسالة
+						</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Footer -->
+	<footer class="footer" style="background-image: url('../صورة-واجهة-الموقع-04.png');  background-repeat: no-repeat;">
+		<div class="container">
+			<div class="row g-4">
+				<div class="col-lg-3 col-md-6">
+					<div class="footer-section">
+						<h3 class="footer-title">شركة إبراهيم</h3>
+						<p class="footer-text">
+							نقدم أفضل الخدمات التقنية والاستشارات المتخصصة لعملائنا بجودة
+							عالية وأسعار منافسة.
+						</p>
+						<div class="social-links">
+							<a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+							<a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+							<a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+							<a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-md-6">
+					<div class="footer-section">
+						<h4 class="footer-subtitle">روابط سريعة</h4>
+						<ul class="footer-links">
+							<li><a href="#home">الرئيسية</a></li>
+							<li><a href="#services">خدماتنا</a></li>
+							<li><a href="#about">من نحن</a></li>
+							<li><a href="#contact">تواصل معنا</a></li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-md-6">
+					<div class="footer-section">
+						<h4 class="footer-subtitle">خدماتنا</h4>
+						<ul class="footer-links">
+							<li><a href="#services">تطوير المواقع</a></li>
+							<li><a href="#services">تطبيقات الجوال</a></li>
+							<li><a href="#services">التسويق الرقمي</a></li>
+							<li><a href="#services">التصميم الجرافيكي</a></li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-md-6">
+					<div class="footer-section">
+						<h4 class="footer-subtitle">معلومات التواصل</h4>
+						<div class="contact-info-footer">
+							<p>
+								<i class="fas fa-map-marker-alt"></i> الرياض، المملكة العربية
+								السعودية
+							</p>
+							<p><i class="fas fa-phone"></i> +966 50 123 4567</p>
+							<p><i class="fas fa-envelope"></i> info@ibrahim-company.com</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="footer-bottom">
+				<p style="color: white;">&copy; 2025 شركة إبراهيم. جميع الحقوق محفوظة.</p>
+			</div>
+		</div>
+	</footer>
+
+
+	<!-- Bootstrap JS -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+	<!-- JavaScript Files -->
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script src="assets/js/main.js"></script>
+</body>
+
+</html>
