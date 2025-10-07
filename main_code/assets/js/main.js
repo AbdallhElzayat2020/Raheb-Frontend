@@ -361,15 +361,6 @@ function initAccessibility() {
       }
     });
   });
-
-  // Add main landmark if not exists
-  // const main = document.querySelector('main');
-  // if (!main) {
-  //   const heroSection = document.querySelector('.hero, .page-header');
-  //   if (heroSection && heroSection.nextElementSibling) {
-  //     heroSection.nextElementSibling.setAttribute('id', 'main');
-  //   }
-  // }
 }
 
 // ===== Performance Optimizations =====
